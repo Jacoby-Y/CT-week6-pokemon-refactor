@@ -1,0 +1,16 @@
+{% extends 'base.html.j2' %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block content %}
+    <img 
+        class="img-fluid py-5"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" 
+        />
+    <div class="d-flex justify-content-center">
+        {# <button class="btn bg-warning center"> <a href="{{url_for('index')}}"> <h2 class="m-0 p-3"> Search </h2> </a></button> #}
+        <a class="nav-link bg-warning m-0 p-4 rounded my-3" href="{{url_for('search')}}"> <h2 class="m-0"> Search </h2> </a>
+    </div>
+{% endblock %}
