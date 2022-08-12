@@ -108,7 +108,7 @@ def search():
     if res:
       poke_json = res.json()
       poke_json["name"] = poke_json["name"].title()
-      return render_template("poke_info.html.j2", poke=poke_json)
+      return f"{poke_json}" # Test
     error_string = "Can't find Pokemon!"
     return render_template("search.html.j2", error=error_string, form=form)
 
